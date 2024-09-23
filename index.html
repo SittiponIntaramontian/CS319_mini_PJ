@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>BU Open House</title>
+        <style>
+            ::-webkit-scrollbar {display: none;}
+            .custom-height {
+                max-height: 600px;
+                object-fit: cover;
+            }
+            .carousel-caption {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+            }
+            @media (max-width: 576px) {
+                #speakers img, #sponsors img {
+                    max-width: 50%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators for the carousel -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active"></button>
+          </div>
+      
+          <!-- Carousel inner content with images -->
+          <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="image/banner_1.jpg" class="d-block w-100 custom-height" alt="">
+              <!-- Content overlay on the carousel -->
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="display-4">Welcome to the IT Department Open House</h1>
+                <p class="lead">Join us for an exciting day of technology and innovation!</p>
+                <a href="#register" class="btn btn-light btn-lg mt-3">Register Now</a>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="image/banner_2.jpg" class="d-block w-100 custom-height" alt="">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="display-4">Explore Our Innovative Workshops</h1>
+                <p class="lead">Gain hands-on experience with the latest technologies.</p>
+                <a href="#register" class="btn btn-light btn-lg mt-3">Register Now</a>
+              </div>
+            </div>
+      
+            <div class="carousel-item active">
+              <img src="image/banner_3.jpg" class="d-block w-100 custom-height" alt="">
+              <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="display-4">Meet Industry Experts</h1>
+                <p class="lead">Learn from leaders in the field of information technology.</p>
+                <a href="#register" class="btn btn-light btn-lg mt-3">Register Now</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Carousel controls for navigation -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About the Open House</h2>
+            <p class="text-center">Discover what our IT department has to offer, learn about our programs, and meet our talented faculty members.</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Event Schedule</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>10:00 AM - 12:00 PM</h4>
+                    <p>Opening Ceremony and Keynote Speaker</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>12:00 PM - 2:00 PM</h4>
+                    <p>Workshops and Hands-on Activities</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>2:00 PM - 4:00 PM</h4>
+                    <p>Networking and Closing Remarks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Profiles Section -->
+    <section id="speakers" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Meet Our Speakers</h2>
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <img src="image/personal_1.jpg" alt="" class="img-fluid rounded-circle">
+                    <h4>Assoc. Prof. Anon Suksathirawong</h4>
+                    <p>Topic: AI and Future Technology</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="image/personal_2.jpg" alt="" class="img-fluid rounded-circle">
+                    <h4>Dr. Patthananon Rhiangmora</h4>
+                    <p>Topic: Cybersecurity in 2024</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img src="image/personal_3.jpg" alt="" class="img-fluid rounded-circle">
+                    <h4>Asst. Prof. Khwanrutai Kulkitjaroen</h4>
+                    <p>Topic: Cloud Computing and Its Impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops and Activities Section -->
+    <section id="workshops" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Workshops and Activities</h2>
+            <div class="row">
+                <div class="col-sm-6 mt-3">
+                    <h4>Web Development Workshop</h4>
+                    <p>Learn the basics of web development with HTML, CSS, and JavaScript. Suitable for beginners.</p>
+                    <a href="#register" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="col-sm-6 mt-3">
+                    <h4>Robotics and IoT Hands-on</h4>
+                    <p>Explore the world of IoT with hands-on experience in building and programming small robots.</p>
+                    <a href="#register" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image/act.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <img src="image/act2.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <img src="image/act3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <img src="image/act4.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            What is the Open House about?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The Open House event is an opportunity to explore our department's programs, workshops, and technology advancements.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            How do I register?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can register through our website by filling out the registration form on the Registration Page.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Registration Section -->
+    <section id="register" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Register for the Event</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required="">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required="">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required="">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Contact Sectuib -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="contactName" required="">
+                </div>
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="contactEmail" required="">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sponsors and Partners Sectuib -->
+    <section id="sponsors" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Sponsors and Partners</h2>
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <img src="image/Frame 1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="image/Frame 2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="image/Frame 3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="image/Frame 4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>© 2024 Bangkok University School of Information Technology and Innovation</p>
+    </footer>
+</body>
+</html>
